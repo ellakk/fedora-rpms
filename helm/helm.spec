@@ -2,7 +2,6 @@ Name:           helm
 Version:        3.8.0
 Release:        1%{?dist}
 Summary:        The Kubernetes Package Manager
-
 License:        ASL 2.0
 URL:            https://github.com/helm/helm
 Source0:        https://get.helm.sh/helm-v%{version}-linux-amd64.tar.gz
