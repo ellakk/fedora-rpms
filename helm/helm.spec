@@ -10,15 +10,13 @@ Source0:        https://get.helm.sh/helm-v%{version}-linux-amd64.tar.gz
 %description
 Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.
 
-%install
-#mkdir -p %{buildroot}%{_bindir}
-#mkdir -p %{buildroot}%{_datadir}/licenses/%{name}
-#mkdir -p %{buildroot}%{_docdir}/%{name}
+%prep
+%setup -n linux-amd64
 
-tar xzf %{_sourcedir}/helm-v%{version}-linux-amd64.tar.gz
-install -D -p -m 755 linux-amd64/helm -t %{buildroot}%{_bindir}
-install -D -p -m 644 linux-amd64/LICENSE -t %{buildroot}%{_datadir}/licenses/%{name}
-install -D -p -m 644 linux-amd64/README.md -t %{buildroot}%{_docdir}/%{name}
+%install
+install -D -p -m 755 helm -t %{buildroot}%{_bindir}
+install -D -p -m 644 LICENSE -t %{buildroot}%{_datadir}/licenses/%{name}
+install -D -p -m 644 README.md -t %{buildroot}%{_docdir}/%{name}
 
 for i in bash,bash-completion/completions,%{name} fish,fish/vendor_completions.d,%{name}.fish zsh,zsh/site-functions,_%{name}; do IFS=","
     set -- $i
@@ -33,4 +31,3 @@ done
 %{_datadir}/bash-completion/
 %{_datadir}/fish/
 %{_datadir}/zsh/
-
