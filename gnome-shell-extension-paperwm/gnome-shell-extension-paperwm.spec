@@ -31,7 +31,7 @@ for i in $(find -type f)
       install -Dm 644 $i %{buildroot}%{_datadir}/gnome-shell/extensions/%{uuid}/$i
   done
 install -D -p -m 0644 \
-  schemas/org.gnome.shell.extensions.org-scrollwm.gschema.xml \
+  schemas/org.gnome.shell.extensions.paperwm.gschema.xml \
   %{buildroot}%{_datadir}/glib-2.0/schemas/org.gnome.shell.extensions.%{extension}.gschema.xml
 
 %files
