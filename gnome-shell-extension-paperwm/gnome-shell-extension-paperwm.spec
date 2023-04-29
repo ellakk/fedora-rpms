@@ -1,5 +1,5 @@
-%global forgeurl https://github.com/ccope/PaperWM/tree/gnome-42
-%global commit 132bbb5c1aa0a7923e02afebee1aa7e3e3569221
+%global forgeurl https://github.com/paperwm/PaperWM/tree/fixes-gnome-44-support
+%global commit 47a6d9ead03c899a96cf5efe57d7b747a74db262
 %global extension paperwm
 %global uuid %{extension}@hedning:matrix.org
 
