@@ -1,5 +1,5 @@
 Name:           helm
-Version:        3.8.0
+Version:        3.11.3
 Release:        1%{?dist}
 Summary:        The Kubernetes Package Manager
 License:        ASL 2.0
