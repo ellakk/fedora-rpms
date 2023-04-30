@@ -11,7 +11,7 @@ Source0:        %{url}/releases/download/v%{version}/%{name}-x86_64-unknown-linu
 Minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
 %prep
-%setup
+%setup -c
 
 %build
 
