@@ -6,7 +6,7 @@
 %forgemeta -v
 
 Name: gnome-shell-extension-%{extension}
-Version: 1.0.0-%{commit}
+Version: 1.0.0^%{commit}
 Release: 1%{?dist}
 Summary: Tiling window manager
 URL: %{forgeurl}
