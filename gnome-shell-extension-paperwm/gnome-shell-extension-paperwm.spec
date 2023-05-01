@@ -5,15 +5,14 @@
 
 %forgemeta -v
 
-Name: gnome-shell-extension-%{extension}
-Version: 1.0.0^%{commit}
-Release: 1%{?dist}
-Summary: Tiling window manager
-URL: %{forgeurl}
-Source:  %{forgesource}
-License: GPLv3+
-
-Requires: gnome-shell-extension-common
+Name:      gnome-shell-extension-%{extension}
+Version:   1.0.0^%{commit}
+Release:   1%{?dist}
+Summary:   Tiling window manager
+License:   GPLv3+
+URL:       %{forgeurl}
+Source:    %{forgesource}
+Requires:  gnome-shell-extension-common
 
 
 %description
