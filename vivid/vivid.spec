@@ -1,6 +1,6 @@
 Name:           vivid
 Version:        0.9.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        vivid is a generator for the LS_COLORS
 License:        MIT
 URL:            https://github.com/sharkdp/vivid
@@ -13,7 +13,7 @@ vivid is a generator for the LS_COLORS environment variable that controls the co
 %setup -n vivid-v%{version}-x86_64-unknown-linux-gnu
 
 %install
-install -D -p -m 755 vivid -t %{buildroot}%{_bindir}/vivid
+install -D -p -m 755 vivid -t %{buildroot}%{_bindir}
 
 %files
 %license LICENSE-MIT
